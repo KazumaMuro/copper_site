@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -27,23 +30,53 @@
    list-style: none;
  }
 
- /* title */
+ .glyphicon-th-list{
+   height: 30px;
+ }
 
-#main_title{
+ // title
+
+ #main_title{
   position: relative;
    width: 1000px;
    margin: 0 auto;
  }
 
-#blog_image{
+ #blog_image{
   height: 400px;
   width: 1000px;
-}
+ }
 
-#title{
+ #title{
   font-size: 80px;
   margin: 0;
   position: absolute;
-  top: 192px;
+  top: 156px;
   left: 100px;
-}
+ }
+
+
+ // main
+
+ #main{
+   width: 1000px;
+   margin: 50px auto;
+
+   p{
+     font-size: 30px;
+   }
+
+   li{
+     font-size: 25px;
+     padding: 20px;
+   }
+
+   a{
+     text-decoration: none;
+     color: #777;
+
+     &:hover{
+       color: #000;
+     }
+   }
+ }

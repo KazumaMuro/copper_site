@@ -10,6 +10,34 @@
   </head>
 
   <body>
+    <div class="dropdown">
+    	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+    	  <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+    	  <span class="caret"></span>
+    	</button>
+    	<ul class="dropdown-menu" role="menu">
+    		<li role="presentation"><a href="/">ホーム</a></li>
+        <li role="presentation" class="divider"></li>
+    		<li role="presentation"><a href="#">第１章　歴史編（全＃問）</a></li>
+        <li role="presentation"><a href="#">　　　　解説</a></li>
+        <li role="presentation" class="divider"></li>
+    		<li role="presentation"><a href="#">第２章　性質編（全４問）</a></li>
+        <li role="presentation"><a href="#">　　　　解説</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a href="#">第３章　合金編（全＃問）</a></li>
+        <li role="presentation"><a href="#">　　　　解説</a></li>
+        <li role="presentation" class="divider"></li>
+    		<li role="presentation"><a href="#">第４章　雑学編（全＃問）</a></li>
+        <li role="presentation"><a href="#">　　　　解説</a></li>
+    	</ul>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      $('.dropdown-toggle').dropdown()
+    </script>
+    </header>
+    
     <%= yield %>
   </body>
 </html>
